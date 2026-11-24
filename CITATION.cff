@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you find CSTR-Net useful, please cite the manuscript listed under
+  preferred-citation. The manuscript is currently under review.
+type: software
+title: CSTR-Net
+authors:
+  - family-names: Wang
+    given-names: Li
+repository-code: "https://github.com/L-WangLi/CSTR-Net"
+preferred-citation:
+  type: unpublished
+  title: >-
+    CSTR-Net: Multi-Scale Temporal Refinement with Cross-Sensor Interaction
+    for Turbofan Engine RUL Prediction
+  authors:
+    - family-names: Wang
+      given-names: Li
+    - family-names: Chaw
+      given-names: Jun Kit
+    - family-names: Ang
+      given-names: Mei Choo
+    - family-names: Wang
+      given-names: Hongqing
+    - family-names: Mahmoud
+      given-names: Moamin A.
+    - family-names: Badioze Zaman
+      given-names: Halimah
+    - family-names: Gunasekaran
+      given-names: Saraswathy Shamini
+    - family-names: Cheng
+      given-names: Xiang
+  year: 2026
+  notes: Manuscript under review
