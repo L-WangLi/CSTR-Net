@@ -1,0 +1,77 @@
+{
+  "project": "CSTR-Net",
+  "model": {
+    "input_dim": 18,
+    "n_ops": 4,
+    "n_sensors": 14,
+    "hidden_dim": 64,
+    "dropout": 0.05,
+    "num_heads": 2,
+    "max_seq_len": 64,
+    "film_policy": "auto",
+    "branch_specs": [
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        8
+      ],
+      [
+        5,
+        4,
+        8
+      ],
+      [
+        5,
+        8,
+        16
+      ]
+    ]
+  },
+  "training": {
+    "seeds": [
+      7,
+      21,
+      42
+    ],
+    "epochs": 200,
+    "patience": 30,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0
+  },
+  "phase_token_protocol": {
+    "datasets": [
+      "DS01",
+      "DS03",
+      "DS04",
+      "DS05",
+      "DS06",
+      "DS07",
+      "DS08a",
+      "DS08c"
+    ],
+    "preprocessor": "dataset/ncmapss.py",
+    "window": 60,
+    "stride": 1,
+    "phase_tokens": 3,
+    "val_frac": 0.15,
+    "ridge": 0.001,
+    "processed_dir": "dataset/processed/ncmapss/phase_tokens"
+  },
+  "ds02_protocol": {
+    "datasets": [
+      "DS02"
+    ],
+    "preprocessor": "dataset/ncmapss_downsample.py",
+    "window": 50,
+    "downsample_factor": 100,
+    "film_mode": "none",
+    "processed_dir": "dataset/processed/ncmapss/downsampled"
+  }
+}
