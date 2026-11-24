@@ -5,11 +5,16 @@ CSTR-Net predicts turbofan engine remaining useful life through multi-scale gate
 
 ## Files
 
-`models/cstr_net.py` defines CSTR-Net, `models/layers.py` contains its temporal and prediction layers, and `models/checkpoint.py` loads trained checkpoints.
+`models/cstr_net.py` defines CSTR-Net 
+`models/layers.py` contains its temporal and prediction layers
+`models/checkpoint.py` loads trained checkpoints.
 
-`dataset/` contains the C-MAPSS preprocessor, the N-CMAPSS phase-token preprocessor, and the DS02 downsampling preprocessor. `training/` contains model construction and training loops. `configs/` stores the final dataset and training settings.
+`dataset/` contains the C-MAPSS preprocessor, the N-CMAPSS phase-token preprocessor, and the DS02 downsampling preprocessor. 
+`training/` contains model construction and training loops. 
+`configs/` stores the final dataset and training settings.
 
-`train.py` trains on C-MAPSS, `run_ncmapss.py` trains on N-CMAPSS, and `evaluate.py` evaluates a trained checkpoint. Dependencies are listed in `requirements.txt`.
+`train.py` trains on C-MAPSS, `run_ncmapss.py` trains on N-CMAPSS, and `evaluate.py` evaluates a trained checkpoint. 
+Dependencies are listed in `requirements.txt`.
 
 ## Data preparation
 
