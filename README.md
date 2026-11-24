@@ -44,3 +44,24 @@ python evaluate.py --checkpoint /path/to/best_checkpoint.pt --data-dir /path/to/
 ```
 
 Here `--data-dir` points to the subset folder containing `X_test.npy` and `y_test.npy`. Evaluation outputs are saved to `outputs/`.
+
+## Citation
+
+The manuscript describing CSTR-Net is currently under review.
+If you find this work useful, please consider citing:
+
+```bibtex
+@unpublished{wang2026cstrnet,
+  author = {Wang, Li and Chaw, Jun Kit and Ang, Mei Choo and
+            Wang, Hongqing and Mahmoud, Moamin A. and
+            Badioze Zaman, Halimah and
+            Gunasekaran, Saraswathy Shamini and Cheng, Xiang},
+  title  = {{CSTR-Net}: Multi-Scale Temporal Refinement with
+            Cross-Sensor Interaction for Turbofan Engine {RUL} Prediction},
+  year   = {2026},
+  note   = {Manuscript under review}
+}
+```
+
+The citation will be updated when a public preprint or the published
+article becomes available.
