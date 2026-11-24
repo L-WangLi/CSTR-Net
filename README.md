@@ -1,6 +1,10 @@
 # CSTR-Net
 
-CSTR-Net (Cross-Sensor Temporal Refinement Network) predicts the remaining useful life of turbofan engines from multivariate sensor sequences. It combines lightweight gated temporal convolutions at multiple scales with cross-sensor attention between temporal encoding and refinement, followed by uniform scale integration. This repository contains the final model implementation for C-MAPSS and N-CMAPSS.
+Official implementation of **CSTR-Net: Multi-Scale Temporal Refinement with Cross-Sensor Interaction for Turbofan Engine RUL Prediction**.
+
+The manuscript is currently under review. If you find this work useful, please consider citing it using the citation information below or the **Cite this repository** button.
+
+CSTR-Net predicts turbofan engine remaining useful life through multi-scale gated temporal convolutions and in-branch cross-sensor attention. This repository contains the final model, data preprocessing, training, and evaluation code for C-MAPSS and N-CMAPSS.
 
 ## Files
 
